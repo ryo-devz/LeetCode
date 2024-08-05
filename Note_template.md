@@ -37,6 +37,7 @@ https://leetcode.com/problems/linked-list-cycle/description/
 
 # Step3
 かかった時間： XXmin
+
 上記を書き直し、実装。
 
 ```python
