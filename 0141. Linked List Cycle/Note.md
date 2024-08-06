@@ -10,10 +10,18 @@ https://leetcode.com/problems/linked-list-cycle/description/
   - Linked Listが与えられて、サイクル（循環）が存在するかを判定する問題。
 
 - どのような解き方ができそうか。
-  - 
+  - XXX
 
 ```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        
 ```
 疑問点：
 - Linked Listとは？
