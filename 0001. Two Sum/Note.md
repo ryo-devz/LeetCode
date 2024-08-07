@@ -87,7 +87,7 @@ class Solution:
 # Step3
 かかった時間： 5min
 
-上記を書き直し、実装。
+上記を書き直して実装。
 
 思考ログ
 - numsとnumが似ているのは混同する可能性があるので他の命名にした方が良さそう？
@@ -104,8 +104,8 @@ class Solution:
             pair_index[num] = i
 ```
 
-# Step 4 
-- レビューを持って修正を行う
+# Step4 
+- レビューを受けて修正を行う
 
 ```python
 
