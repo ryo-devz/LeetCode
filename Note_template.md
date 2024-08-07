@@ -30,11 +30,6 @@ https://leetcode.com/problems/linked-list-cycle/description/
 
 ```
 
-- XXX
-```python
-
-```
-
 # Step3
 かかった時間： XXmin
 
@@ -44,7 +39,7 @@ https://leetcode.com/problems/linked-list-cycle/description/
 
 ```
 
-# Step 4 
+# Step4 
 - レビューを持って修正を行う
 
 ```python
