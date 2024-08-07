@@ -33,14 +33,14 @@ https://leetcode.com/problems/linked-list-cycle/description/
 # Step3
 かかった時間： XXmin
 
-上記を書き直し、実装。
+上記を書き直して実装。
 
 ```python
 
 ```
 
 # Step4 
-- レビューを持って修正を行う
+- レビューを受けて修正を行う
 
 ```python
 
