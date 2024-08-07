@@ -1,5 +1,7 @@
 # 問題概要
-問題文: https://leetcode.com/problems/linked-list-cycle/description/
+問題: 141. Linked List Cycle
+
+https://leetcode.com/problems/linked-list-cycle/description/
 
 言語: Python
 
