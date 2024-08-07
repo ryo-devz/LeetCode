@@ -1,5 +1,5 @@
 # 問題概要
-1. Two Sum
+タイトル: 1. Two Sum
 
 問題文: https://leetcode.com/problems/two-sum/description/
 
