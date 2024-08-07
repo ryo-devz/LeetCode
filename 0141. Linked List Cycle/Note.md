@@ -96,7 +96,7 @@ class Solution:
         return False
 ```
 
-# Step 4 
+# Step4 
 - レビューを依頼して修正を行う
 
 ```python
