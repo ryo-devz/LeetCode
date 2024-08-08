@@ -18,7 +18,7 @@ https://leetcode.com/problems/valid-parentheses/description/
     - 全ての閉じ括弧は同じ種類の開き括弧を持たなければならない
     - 文字列は```'()[]{}'```のみを含む
 - どのような方法で解けそうか？
-  - stackを利用すればいけそう
+  - Stackを使って括弧が閉じたものから消し込んでいけば実現できそう
   - 開始括弧溜めていき、閉じ括弧が来たら対応する開始括弧を消し込んでいく
   - 対応するものがなければその時点でFalse,全ての括弧が消し込めればTure、そうでなければFalse
 - stackとは？
@@ -112,8 +112,7 @@ https://leetcode.com/problems/valid-parentheses/description/
     print(queue.popleft())                  
     print(queue) 
     ```
-   - ```popleft```で先頭の要素を削除する必要がある。
-- Stackを使って括弧が閉じたものから消し込んでいけば実現できそう
+    - ```popleft```で先頭の要素を削除する必要がある。
 
 ```python
 class Solution:
