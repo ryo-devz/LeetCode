@@ -21,10 +21,104 @@ https://leetcode.com/problems/valid-parentheses/description/
   - stackを利用すればいけそう
   - 開始括弧溜めていき、閉じ括弧が来たら対応する開始括弧を消し込んでいく
   - 対応するものがなければその時点でFalse,全ての括弧が消し込めればTure、そうでなければFalse
-  
+- stackとは？
+  ```
+  A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+  This means that the last element added to the stack is the first one to be removed.
+  It can be visualized as a pile of plates where you can only add or remove the top plate.
+  ```
+  https://www.geeksforgeeks.org/difference-between-stack-and-queue-data-structures/
+- queueとは？
+  ```
+  A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+  This means that the first element added to the queue is the first one to be removed.
+  It can be visualized as a line of people waiting for a service, where the first person in line is the first to be served.
+  ```
+  https://www.geeksforgeeks.org/difference-between-stack-and-queue-data-structures/
+
+- listやDequewoを利用して実現できそう
+- https://www.geeksforgeeks.org/stack-and-queues-in-python/
+1) Using list
+  - Stack
+    ```python
+    # Python code to demonstrate Implementing  
+    # stack using list 
+    stack = ["Amar", "Akbar", "Anthony"] 
+    stack.append("Ram") 
+    stack.append("Iqbal") 
+    print(stack) 
+      
+    # Removes the last item 
+    print(stack.pop()) 
+      
+    print(stack) 
+      
+    # Removes the last item 
+    print(stack.pop()) 
+      
+    print(stack) 
+    ```
+    - ```append```で後ろに追加される
+    - ```pop```で後ろの要素から削除される
+  - Queues 
+    ```python
+    # Python code to demonstrate Implementing  
+    # Queue using list 
+    queue = ["Amar", "Akbar", "Anthony"] 
+    queue.append("Ram") 
+    queue.append("Iqbal") 
+    print(queue) 
+      
+    # Removes the first item 
+    print(queue.pop(0)) 
+      
+    print(queue) 
+    # Removes the first item 
+    print(queue.pop(0)) 
+    print(queue) 
+    ```
+    - ```pop```で削除する際にindexを指定する必要がある。
+2) Using Deque
+  - Stack
+    ```python
+    # Python code to demonstrate Implementing  
+    # Stack using deque 
+    from collections import deque 
+    queue = deque(["Ram", "Tarun", "Asif", "John"]) 
+    print(queue) 
+    queue.append("Akbar") 
+    print(queue) 
+    queue.append("Birbal") 
+    print(queue) 
+    print(queue.pop())                  
+    print(queue.pop())                  
+    print(queue) 
+    ```
+    - ```deque```のimportが必要
+    - 宣言時にdequeの記載が必要
+    - 基本的にlistと使い方は同じ
+  - Queues 
+    ```python
+    # Python code to demonstrate Implementing  
+    # Queue using deque 
+    from collections import deque 
+    queue = deque(["Ram", "Tarun", "Asif", "John"]) 
+    print(queue) 
+    queue.append("Akbar") 
+    print(queue) 
+    queue.append("Birbal") 
+    print(queue) 
+    print(queue.popleft())                  
+    print(queue.popleft())                  
+    print(queue) 
+    ```
+   - ```popleft```で先頭の要素を削除する必要がある。
+- Stackを使って括弧が閉じたものから消し込んでいけば実現できそう
+
 ```python
 
 ```
+
 疑問点：
 - XXX
 - 
