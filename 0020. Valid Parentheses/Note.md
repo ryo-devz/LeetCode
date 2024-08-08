@@ -7,7 +7,7 @@ https://leetcode.com/problems/valid-parentheses/description/
 
 # Step1
 
-かかった時間：XXmin
+かかった時間：30min
 
 思考ログ：
 - 問題を理解する。
@@ -141,7 +141,9 @@ class Solution:
   →yes。初手で")"が来た場合にエラー落ちするので、上記の手法でいくならlen(stack) >= 1で判定する必要がある。
 - popで要素が無かったときにエラーになる？
   →yes
-  
+- if文が同じような構成になっているのでまとめられるか。
+- 他の方法で解くことはできないか。少なくともDequeを利用して書き換えることは可能。
+
 参考リンク
 - 
 # Step2
