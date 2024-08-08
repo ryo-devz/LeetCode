@@ -116,12 +116,32 @@ https://leetcode.com/problems/valid-parentheses/description/
 - Stackを使って括弧が閉じたものから消し込んでいけば実現できそう
 
 ```python
-
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        for bracket in s:
+            if bracket == "(" or bracket == "[" or bracket == "{":
+                stack.append(bracket)
+            else:
+                if bracket == ")" and stack[-1] == "(":
+                    stack.pop()
+                elif bracket == "]" and stack[-1] == "[":
+                    stack.pop()
+                elif bracket == "}" and stack[-1] == "{":
+                    stack.pop()
+                else:
+                    return False
+        if len(stack) != 0:
+            return False
+        return True
 ```
 
 疑問点：
-- XXX
-- 
+- stack[-1]で要素が無かったときにエラーになる？
+  →yes。初手で")"が来た場合にエラー落ちするので、上記の手法でいくならlen(stack) >= 1で判定する必要がある。
+- popで要素が無かったときにエラーになる？
+  →yes
+  
 参考リンク
 - 
 # Step2
