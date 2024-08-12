@@ -115,6 +115,8 @@ https://leetcode.com/problems/valid-parentheses/description/
     - ```popleft```で先頭の要素を削除する必要がある。
 
 ```python
+# 時間計算量：O(n)
+# 空間計算量：O(n)
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
@@ -148,7 +150,7 @@ class Solution:
 参考リンク
 - 
 # Step2
-かかった時間：XXmin
+かかった時間：20min
 
 思考ログ
 - 他の方の解き方を参考にしてみる
@@ -156,18 +158,49 @@ class Solution:
   - ```pop```した際に値を格納しておけるのか・・・これは利用できそう。
   - ```leftBracket```と```rightBracket```という命名は分かりやすそう。
   - chatGPTを利用して実装の助言やソースコードの解説をしてもらうことでより良い実装・学習になりそう。
+  - 
 
 ```python
+# 時間計算量：O(n)
+# 空間計算量：O(n)
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        closeToOpen = { ")" : "(", "]" : "[", "}" : "{"}
 
+        for c in s:
+            if c in closeToOpen:
+                if stack and stack[-1] == closeToOpen[c]:
+                    stack.pop()
+                else:
+                    return False
+            else:
+                stack.append(c)
+        return True if not stack else False
 ```
 
 # Step3
-かかった時間： XXmin
+かかった時間： 5min
 
 上記を書き直して実装。
 
 ```python
+# 時間計算量：O(n)
+# 空間計算量：O(n)
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        closeToOpen = { ")" : "(", "]" : "[", "}" : "{" }
 
+        for c in s:
+            if c in closeToOpen:
+                if stack and stack[-1] == closeToOpen[c]:
+                    stack.pop()
+                else:
+                    return False
+            else:
+                stack.append(c)
+        return True if not stack else False
 ```
 
 # Step4 
