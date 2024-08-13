@@ -158,7 +158,7 @@ class Solution:
   - ```pop```した際に値を格納しておけるのか・・・これは利用できそう。
   - ```leftBracket```と```rightBracket```という命名は分かりやすそう。
   - chatGPTを利用して実装の助言やソースコードの解説をしてもらうことでより良い実装・学習になりそう。
-  - 
+  - stackの要素の有無は```if stack```と```if not stack```で判別可能。
 
 ```python
 # 時間計算量：O(n)
